@@ -4,6 +4,7 @@ JosharonoffCom::Application.routes.draw do
 
 
   # Page Routes
+  get 'pages/index' => 'high_voltage/pages#show', id: 'index'
   root :to => 'high_voltage/pages#show', id: 'index'
 
   # Sample of regular route:
