@@ -10,17 +10,20 @@
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
-
+    <title><%= yield(:page_title) %></title>
+    <!--[if lt IE 8]>
+<%= stylesheet_link_tag "font-awesome-ie7.min.css", media: "all" %>
+<![endif]-->
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
   </head>
 
   <body>
-    <%= render "navbar" %>
+      <%= render "navbar" %>
+    <div class="row">
     <%= yield %>
-
+    </div>  
 
     <%= javascript_include_tag "application" %>
   </body>
