@@ -4,7 +4,7 @@ JosharonoffCom::Application.routes.draw do
 
 
   # Page Routes
-  root to: 'high_voltage/pages#show', id: 'index'
+  root to: 'high_voltage/pages#show', id: 'home'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
