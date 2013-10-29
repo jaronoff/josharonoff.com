@@ -1,23 +1,11 @@
-<!-- Navigation -->
- 
-  <nav class="top-bar">
-    <ul class="title-area">
-      <!-- Title Area -->
-      <li class="name">
-        <h1>
-          <%= link_to 'JoshAronoff.com', page_path('home') %>
-        </h1>
-      </li>
-      <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-    </ul>
- 
-    <section class="top-bar-section">
-      <!-- Right Nav Section -->
-      <ul class="right">
-        <li class="divider"></li>
-        <li><%= link_to 'About', page_path('about') %></li>
-        
+<nav class="navbar row nav">
+      <a class="toggle" gumby-trigger=".nav1 &gt; ul" href="#"><i class="icon-menu" title=".icon-menu"></i></a>
+      <h4 class="four columns logo">
+        <%= link_to 'Josh Aronoff', page_path('home') %>
+       </h4>
+      <ul class="eight columns">
+        <li><a href="#"><%= link_to 'About', page_path('about') %></li>
+        <li><a href="#"><%= link_to 'Experience', page_path('experience') %></a></li>
+        <li><a href="#"><%= link_to 'Portfolio', page_path('portfolio') %></li>
       </ul>
-    </section>
-  </nav>
- 
+</nav>

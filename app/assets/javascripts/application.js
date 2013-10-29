@@ -12,7 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-= require foundation
+//= require modernizr
+//= require gumby
 //= require_tree .
+
 
 $(document).foundation();

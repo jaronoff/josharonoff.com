@@ -10,9 +10,28 @@
  *
  *= require_self
  *= require_tree .
- *= require foundation_and_overrides
+ *= require gumby
  */
 
 
 @import "font-awesome";
- @import "foundation";
+
+
+.row {
+	padding:20px;
+}
+.columns {
+	padding:0;
+}
+
+
+/* Gumby Framework CSS */
+
+.navbar {
+	width: 100%;
+	min-height: 60px;
+	display: block;
+	margin-bottom: 20px;
+	background: #4a4d50;
+	position: relative;
+}
