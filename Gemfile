@@ -6,7 +6,14 @@ gem 'high_voltage'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
+
+  group :development do
+   gem 'sqlite3'
+end
+
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -18,6 +25,7 @@ group :assets do
   gem 'gumby-framework'
   gem "font-awesome-rails"
   gem 'uglifier', '>= 1.0.3'
+
 
 end
 
